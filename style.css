@@ -412,6 +412,13 @@
   transform: translateX(100%);
 }
 }
-@media (max-width:570px) {
-
+@media (max-width:450px) {
+  .main-dropdown{
+    width: 70%;
+    padding: 60px 0 0 0;
+    left: -0%
+  }  
+.close{
+  left: 55%;
+}
 }
