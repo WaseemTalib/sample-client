@@ -12,11 +12,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="show()">
 
   <!-- main divs -->
-  <div class="ct" id="a1">
-    <div class="ct" id="a2">
+  <div class="" id="a1">
+    <div class="ct" id="a2" >
       <div class="ct" id="a3">
         <div class="ct" id="a4">
           <div class="ct" id="a5">
@@ -60,19 +60,19 @@
                   </label>
 
                   <ul class="dropdown__items">
-                    <a href="#a1">
+                    <a href="#a1" onclick="displayA1()">
                       <li class="sublist_item">Sales Overview Home (Embedded)</li>
                     </a>
-                    <a href="#a2">
+                    <a href="#a2" onclick="display()">
                       <li class="sublist_item">Accounts</li>
                     </a>
-                    <a href="#a3">
+                    <a href="#a3" onclick="display()">
                       <li class="sublist_item">Sales Rep Overview</li>
                     </a>
-                    <a href="#a4">
+                    <a href="#a4" onclick="display()">
                       <li class="sublist_item">Trending</li>
                     </a>
-                    <a href="#a5">
+                    <a href="#a5" onclick="display()">
                       <li class="sublist_item">Whitespace (individual)</li>
                     </a>
                   </ul>
@@ -89,13 +89,13 @@
                   </label>
 
                   <ul class="dropdown__items">
-                    <a href="#b1">
+                    <a href="#b1" onclick="display()">
                       <li class="sublist_item">Pipeline Performance</li>
                     </a>
-                    <a href="#b2">
+                    <a href="#b2" onclick="display()">
                       <li class="sublist_item">Sales Performance</li>
                     </a>
-                    <a href="#b3">
+                    <a href="#b3" onclick="display()">
                       <li class="sublist_item">Service Performance</li>
                     </a>
                   </ul>
@@ -111,19 +111,19 @@
                   </label>
 
                   <ul class="dropdown__items">
-                    <a href="#c1">
+                    <a href="#c1" onclick="display()">
                       <li class="sublist_item">Company Overview</li>
                     </a>
-                    <a href="#c2">
+                    <a href="#c2" onclick="display()">
                       <li class="sublist_item">Company Trending</li>
                     </a>
-                    <a href="#c3">
+                    <a href="#c3" onclick="display()">
                       <li class="sublist_item">Lead Analysis</li>
                     </a>
-                    <a href="#c4">
+                    <a href="#c4" onclick="display()">
                       <li class="sublist_item">Sales Performance (Operations)</li>
                     </a>
-                    <a href="#c5">
+                    <a href="#c5" onclick="display()">
                       <li class="sublist_item">Sales Stage Analysis</li>
                     </a>
                   </ul>
@@ -141,13 +141,13 @@
                     <a href="#d1">
                       <li class="sublist_item">Sales Analytics Home Dashboard</li>
                     </a>
-                    <a href="#d2">
+                    <a href="#d2" onclick="display()">
                       <li class="sublist_item">Sales Analytics Account Dashboard (Embedded)</li>
                     </a>
-                    <a href="#d3">
+                    <a href="#d3" onclick="display()">
                       <li class="sublist_item">Sales Analytics Opportunity Dashboard (Embedded)</li>
                     </a>
-                    <a href="#d4">
+                    <a href="#d4" onclick="display()">
                       <li class="sublist_item">Sales Analytics Sales Overview Home (Embedded)</li>
                     </a>
                   </ul>
@@ -163,28 +163,27 @@
                   </label>
 
                   <ul class="dropdown__items">
-                    <a href="#e1">
+                    <a href="#e1" onclick="display()">
                       <li class="sublist_item">Sales Analytics Forecast Dashboard</li>
                     </a>
-                    <a href="#e2">
+                    <a href="#e2" onclick="display()">
                       <li class="sublist_item">Sales Analytics Leaderboard Dashboard</li>
                     </a>
-                    <a href="#e3">
+                    <a href="#e3" onclick="display()">
                       <li class="sublist_item">Sales Analytics Team Activities Dashboard</li>
                     </a>
-                    <a href="#e4">
+                    <a href="#e4" onclick="display()">
                       <li class="sublist_item">Sales Analytics Team Benchmark Dashboard</li>
                     </a>
-                    <a href="#e5">
+                    <a href="#e5" onclick="display()">
                       <li class="sublist_item">Sales Analytics Trending Dashboards</li>
                     </a>
-                    <a href="#e6">
+                    <a href="#e6" onclick="display()">
                       <li class="sublist_item">Sales Analytics Team Whitespace Dashboard</li>
                     </a>
                   </ul>
                 </div>
-             
-             
+                   
               </ul>
 
               <!-- Dashboards for Sales Representatives -->
@@ -273,7 +272,6 @@
               </div>
 
             </section>
-
           </div>
         </div>
       </div>
@@ -298,6 +296,30 @@
         </div>
       </div>
     
+
+<script>
+  show = () => {
+    document.getElementById('z1').style.transform = "translateX(-92.5%)";
+  }
+  display = () => {
+    document.getElementById('z1').style.transform = "translateX(100%)";
+  }
+  displayA1 = () => {
+    document.getElementById('z1').style.transform = "translateX(-92.5%)";
+  }
+  if (screen.width < 768) {
+    show = () => {
+    document.getElementById('z1').style.transform = "translateX(100%)";
+  }
+  display = () => {
+    document.getElementById('z1').style.transform = "translateX(-100%)";
+  }
+  displayA1 = () => {
+    document.getElementById('z1').style.transform = "translateX(100%)";
+  } 
+  }
+
+</script>
 </body>
 
 </html>
